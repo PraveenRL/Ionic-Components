@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ion-alert</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    
+    <ion-row>
+
+      <ion-col>
+        <ion-button (click)="presentAlert()">Alert</ion-button>
+      </ion-col>
+
+      <ion-col>
+        <ion-button (click)="presentAlertMultipleButtons()">Multiple</ion-button>
+      </ion-col>
+
+      <ion-col>
+        <ion-button (click)="presentAlertConfirm()">Confirm</ion-button>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+
+      <ion-col>
+        <ion-button (click)="presentAlertPrompt()">Prompt</ion-button>
+      </ion-col>
+
+      <ion-col>
+        <ion-button (click)="presentAlertRadio()">Radio</ion-button>
+      </ion-col>
+      
+      <ion-col>
+        <ion-button (click)="presentAlertCheckBox()">CheckBox</ion-button>
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
+
+</ion-content>

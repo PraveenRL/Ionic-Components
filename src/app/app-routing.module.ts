@@ -3,14 +3,22 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
-  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
+  },
+  {
+    path: 'actionSheet',
+    loadChildren: () => import('./ion-action-sheet/ion-action-sheet.module').then(m => m.IonActionSheetPageModule)
+  },
+  {
+    path: 'alert',
+    loadChildren: () => import('./ion-alert/ion-alert.module').then(m => m.IonAlertPageModule)
+  }
 ];
 
 @NgModule({
