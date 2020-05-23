@@ -13,8 +13,8 @@
     <!-- Sliding item with text options on both sides -->
     <ion-item-sliding>
       <ion-item-options side="start">
-        <ion-item-option (click)="favorite(item)">Favorite</ion-item-option>
-        <ion-item-option color="danger" (click)="share(item)">Share</ion-item-option>
+        <ion-item-option (click)="favorite()">Favorite</ion-item-option>
+        <ion-item-option color="danger" (click)="share()">Share</ion-item-option>
       </ion-item-options>
 
       <ion-item>
@@ -22,7 +22,7 @@
       </ion-item>
 
       <ion-item-options side="end">
-        <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+        <ion-item-option (click)="unread()">Unread</ion-item-option>
       </ion-item-options>
     </ion-item-sliding>
 

@@ -13,15 +13,15 @@ export class ItemSlidingPage implements OnInit {
   ngOnInit() {
   }
 
-  public favorite(item) {
+  public favorite() {
 
   }
 
-  public share(item) {
+  public share() {
 
   }
 
-  public unread(item) {
+  public unread() {
 
   }
 
