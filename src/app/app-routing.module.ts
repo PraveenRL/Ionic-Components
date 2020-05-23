@@ -70,6 +70,26 @@ const routes: Routes = [
   {
     path: 'input',
     loadChildren: () => import('./input/input.module').then( m => m.InputPageModule)
+  },
+  {
+    path: 'item',
+    loadChildren: () => import('./item/item.module').then( m => m.ItemPageModule)
+  },
+  {
+    path: 'item-group',
+    loadChildren: () => import('./item-group/item-group.module').then( m => m.ItemGroupPageModule)
+  },
+  {
+    path: 'item-sliding',
+    loadChildren: () => import('./item-sliding/item-sliding.module').then( m => m.ItemSlidingPageModule)
+  },
+  {
+    path: 'list',
+    loadChildren: () => import('./list/list.module').then( m => m.ListPageModule)
+  },
+  {
+    path: 'virtual-scroll',
+    loadChildren: () => import('./virtual-scroll/virtual-scroll.module').then( m => m.VirtualScrollPageModule)
   }
 ];
 
