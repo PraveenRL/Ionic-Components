@@ -26,6 +26,14 @@ const routes: Routes = [
   {
     path: 'button',
     loadChildren: () => import('./button/button.module').then( m => m.ButtonPageModule)
+  },
+  {
+    path: 'ripple',
+    loadChildren: () => import('./ripple-effect/ripple-effect.module').then( m => m.RippleEffectPageModule)
+  },
+  {
+    path: 'card',
+    loadChildren: () => import('./card/card.module').then( m => m.CardPageModule)
   }
 ];
 
