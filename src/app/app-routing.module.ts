@@ -46,6 +46,10 @@ const routes: Routes = [
   {
     path: 'content',
     loadChildren: () => import('./content/content.module').then( m => m.ContentPageModule)
+  },
+  {
+    path: 'datetime',
+    loadChildren: () => import('./datetime/datetime.module').then( m => m.DatetimePageModule)
   }
 ];
 
