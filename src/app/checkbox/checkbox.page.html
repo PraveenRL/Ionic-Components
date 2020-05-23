@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Checkbox</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-item>
+    <ion-label>Default</ion-label>
+    <ion-checkbox></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Disabled</ion-label>
+    <ion-checkbox disabled="true"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Checked</ion-label>
+    <ion-checkbox checked="true"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Color</ion-label>
+    <ion-checkbox color="primary"></ion-checkbox>
+    <ion-checkbox color="secondary"></ion-checkbox>
+    <ion-checkbox color="tertiary"></ion-checkbox>
+    <ion-checkbox color="danger"></ion-checkbox>
+    <ion-checkbox color="light"></ion-checkbox>
+    <ion-checkbox color="dark"></ion-checkbox>
+    <ion-checkbox color="success"></ion-checkbox>
+    <ion-checkbox color="warning"></ion-checkbox>
+  </ion-item>
+
+  <ion-list>
+    <ion-text>
+      <h5>Binding</h5>
+    </ion-text>
+
+    <ion-item *ngFor="let check of checkBoxes">
+      <ion-label>{{check.label}}</ion-label>
+      <ion-checkbox slot="end" [(ngModel)]="check.isChecked" (click)="onCheckBox()"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  <br>
+
+  <ion-item>
+    <ion-label>Indeterminate</ion-label>
+    <ion-checkbox indeterminate></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Mode</ion-label>
+    <ion-checkbox mode="ios"></ion-checkbox>
+    <ion-checkbox mode="md"></ion-checkbox>
+  </ion-item>
+
+  <ion-list>
+    <ion-text>
+      <h5>Events</h5>
+    </ion-text>
+
+    <ion-item>
+      <ion-label>ionBlur</ion-label>
+      <ion-checkbox (ionBlur)="ionBlurEvent($event)"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>ionFocus</ion-label>
+      <ion-checkbox (ionFocus)="ionFocusEvent($event)"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>ionChange</ion-label>
+      <ion-checkbox (ionChange)="ionChangeEvent($event)"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+  
+
+</ion-content>
