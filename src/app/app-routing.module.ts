@@ -18,6 +18,14 @@ const routes: Routes = [
   {
     path: 'alert',
     loadChildren: () => import('./ion-alert/ion-alert.module').then(m => m.IonAlertPageModule)
+  },
+  {
+    path: 'badge',
+    loadChildren: () => import('./badge/badge.module').then( m => m.BadgePageModule)
+  },
+  {
+    path: 'button',
+    loadChildren: () => import('./button/button.module').then( m => m.ButtonPageModule)
   }
 ];
 
