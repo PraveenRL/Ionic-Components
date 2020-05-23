@@ -21,35 +21,55 @@ const routes: Routes = [
   },
   {
     path: 'badge',
-    loadChildren: () => import('./badge/badge.module').then( m => m.BadgePageModule)
+    loadChildren: () => import('./badge/badge.module').then(m => m.BadgePageModule)
   },
   {
     path: 'button',
-    loadChildren: () => import('./button/button.module').then( m => m.ButtonPageModule)
+    loadChildren: () => import('./button/button.module').then(m => m.ButtonPageModule)
   },
   {
     path: 'ripple',
-    loadChildren: () => import('./ripple-effect/ripple-effect.module').then( m => m.RippleEffectPageModule)
+    loadChildren: () => import('./ripple-effect/ripple-effect.module').then(m => m.RippleEffectPageModule)
   },
   {
     path: 'card',
-    loadChildren: () => import('./card/card.module').then( m => m.CardPageModule)
+    loadChildren: () => import('./card/card.module').then(m => m.CardPageModule)
   },
   {
     path: 'checkbox',
-    loadChildren: () => import('./checkbox/checkbox.module').then( m => m.CheckboxPageModule)
+    loadChildren: () => import('./checkbox/checkbox.module').then(m => m.CheckboxPageModule)
   },
   {
     path: 'chip',
-    loadChildren: () => import('./chip/chip.module').then( m => m.ChipPageModule)
+    loadChildren: () => import('./chip/chip.module').then(m => m.ChipPageModule)
   },
   {
     path: 'content',
-    loadChildren: () => import('./content/content.module').then( m => m.ContentPageModule)
+    loadChildren: () => import('./content/content.module').then(m => m.ContentPageModule)
   },
   {
     path: 'datetime',
-    loadChildren: () => import('./datetime/datetime.module').then( m => m.DatetimePageModule)
+    loadChildren: () => import('./datetime/datetime.module').then(m => m.DatetimePageModule)
+  },
+  {
+    path: 'fab',
+    loadChildren: () => import('./fab/fab.module').then(m => m.FabPageModule)
+  },
+  {
+    path: 'fab-button',
+    loadChildren: () => import('./fab-button/fab-button.module').then(m => m.FabButtonPageModule)
+  },
+  {
+    path: 'fab-list',
+    loadChildren: () => import('./fab-list/fab-list.module').then(m => m.FabListPageModule)
+  },
+  {
+    path: 'grid',
+    loadChildren: () => import('./grid/grid.module').then(m => m.GridPageModule)
+  },
+  {
+    path: 'input',
+    loadChildren: () => import('./input/input.module').then( m => m.InputPageModule)
   }
 ];
 
