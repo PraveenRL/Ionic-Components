@@ -94,6 +94,10 @@ const routes: Routes = [
   {
     path: 'avatar-img-thumbnail',
     loadChildren: () => import('./avatar-img-thumbnail/avatar-img-thumbnail.module').then( m => m.AvatarImgThumbnailPageModule)
+  },
+  {
+    path: 'modal',
+    loadChildren: () => import('./modal/modal.module').then( m => m.ModalPageModule)
   }
 ];
 
