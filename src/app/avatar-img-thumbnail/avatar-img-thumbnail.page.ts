@@ -9,8 +9,6 @@ import { BadgePage } from '../badge/badge.page';
 })
 export class AvatarImgThumbnailPage implements OnInit {
 
-  public badgePage = BadgePage;
-
   public imageItems: Array<Object> = [
     {
       src: "https://html5hive.org/wp-content/uploads/2014/06/js_800x800.jpg",

@@ -9,8 +9,6 @@ import { AvatarImgThumbnailPage } from '../avatar-img-thumbnail/avatar-img-thumb
 })
 export class BadgePage implements OnInit {
 
-  public rootPage = AvatarImgThumbnailPage;
-
   constructor() { }
 
   ngOnInit() {

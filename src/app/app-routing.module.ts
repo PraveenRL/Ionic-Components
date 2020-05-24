@@ -102,6 +102,10 @@ const routes: Routes = [
   {
     path: 'nav',
     loadChildren: () => import('./nav/nav.module').then( m => m.NavPageModule)
+  },
+  {
+    path: 'popover',
+    loadChildren: () => import('./popover/popover.module').then( m => m.PopoverPageModule)
   }
 ];
 
