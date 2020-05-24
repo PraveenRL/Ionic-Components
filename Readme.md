@@ -30,7 +30,7 @@ defineCustomElements(window);
 - Live reload `ionic capacitor run android -l --external`
 
 # Exit App
-`
+```
 import { Component, OnInit } from '@angular/core';
 import { Platform, IonRouterOutlet } from '@ionic/angular';
 import { Plugins } from '@capacitor/core';
@@ -61,4 +61,4 @@ export class HomePage implements OnInit {
   }
 
 }
-`
+```

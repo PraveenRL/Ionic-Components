@@ -90,6 +90,10 @@ const routes: Routes = [
   {
     path: 'virtual-scroll',
     loadChildren: () => import('./virtual-scroll/virtual-scroll.module').then( m => m.VirtualScrollPageModule)
+  },
+  {
+    path: 'avatar-img-thumbnail',
+    loadChildren: () => import('./avatar-img-thumbnail/avatar-img-thumbnail.module').then( m => m.AvatarImgThumbnailPageModule)
   }
 ];
 
