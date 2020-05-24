@@ -6,6 +6,12 @@
 
 <ion-content class="ion-padding">
 
+  <ion-nav-link router-direction="back" [component]="rootPage">
+    <ion-item button>
+      <ion-icon name="arrow-back" slot="end"> </ion-icon>
+      <ion-label>Go back</ion-label>
+    </ion-item>
+  </ion-nav-link>
 
   <ion-badge class="ion-margin-end">Default</ion-badge>
   <ion-badge color="primary" class="ion-margin-end">Primary</ion-badge>

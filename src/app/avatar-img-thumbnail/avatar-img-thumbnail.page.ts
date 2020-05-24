@@ -1,11 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
+import { BadgePage } from '../badge/badge.page';
+
 @Component({
   selector: 'app-avatar-img-thumbnail',
   templateUrl: './avatar-img-thumbnail.page.html',
   styleUrls: ['./avatar-img-thumbnail.page.scss'],
 })
 export class AvatarImgThumbnailPage implements OnInit {
+
+  public badgePage = BadgePage;
 
   public imageItems: Array<Object> = [
     {
@@ -30,7 +34,9 @@ export class AvatarImgThumbnailPage implements OnInit {
     },
   ]
 
-  constructor() { }
+  constructor(
+  ) {
+  }
 
   ngOnInit() {
   }

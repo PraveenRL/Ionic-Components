@@ -8,13 +8,18 @@ import { AvatarImgThumbnailPageRoutingModule } from './avatar-img-thumbnail-rout
 
 import { AvatarImgThumbnailPage } from './avatar-img-thumbnail.page';
 
+import { BadgePage } from '../badge/badge.page';
+import { BadgePageModule } from '../badge/badge.module';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AvatarImgThumbnailPageRoutingModule
+    AvatarImgThumbnailPageRoutingModule,
+    BadgePageModule
   ],
-  declarations: [AvatarImgThumbnailPage]
+  declarations: [AvatarImgThumbnailPage],
+  entryComponents: [BadgePage]
 })
 export class AvatarImgThumbnailPageModule {}
