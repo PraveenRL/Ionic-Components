@@ -118,6 +118,14 @@ const routes: Routes = [
   {
     path: 'skeleton',
     loadChildren: () => import('./skeleton/skeleton.module').then( m => m.SkeletonPageModule)
+  },
+  {
+    path: 'spinner',
+    loadChildren: () => import('./spinner/spinner.module').then( m => m.SpinnerPageModule)
+  },
+  {
+    path: 'radio',
+    loadChildren: () => import('./radio/radio.module').then( m => m.RadioPageModule)
   }
 ];
 
