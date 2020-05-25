@@ -134,6 +134,14 @@ const routes: Routes = [
   {
     path: 'refresher',
     loadChildren: () => import('./refresher/refresher.module').then( m => m.RefresherPageModule)
+  },
+  {
+    path: 'reorder',
+    loadChildren: () => import('./reorder/reorder.module').then( m => m.ReorderPageModule)
+  },
+  {
+    path: 'searchbar',
+    loadChildren: () => import('./searchbar/searchbar.module').then( m => m.SearchbarPageModule)
   }
 ];
 

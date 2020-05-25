@@ -1,0 +1,121 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Searchbar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item-divider color="primary">
+    <h5>Search with function</h5>
+  </ion-item-divider>
+  <ion-searchbar (ionInput)="filterJson($event)"></ion-searchbar>
+
+  <ion-list>
+    <ion-item *ngFor="let item of jsonData" (click)="selectValue(item.color)">
+      {{item.color}}
+      {{item.value}}
+    </ion-item>
+  </ion-list>
+
+  <!--  -->
+
+  <ion-item-divider color="primary">
+    <h5>Default</h5>
+  </ion-item-divider>
+  <ion-searchbar></ion-searchbar>
+
+  <!--  -->
+
+  <ion-item-divider color="secondary">
+    <h5>Show Cancel Button</h5>
+  </ion-item-divider>
+  <ion-searchbar showCancelButton="always"></ion-searchbar>
+
+  <!--  -->
+
+  <ion-item-divider color="tertiary">
+    <h5>Never Show Cancel Button</h5>
+  </ion-item-divider>
+  <ion-searchbar showCancelButton="never"></ion-searchbar>
+
+  <!-- -->
+
+  <ion-item-divider color="danger">
+    <h5>Searchbar with danger color</h5>
+  </ion-item-divider>
+  <ion-searchbar color="danger"></ion-searchbar>
+
+  <!-- -->
+
+  <ion-item-divider color="warning">
+    <h5>Searchbar with value</h5>
+  </ion-item-divider>
+  <ion-searchbar value="Ionic"></ion-searchbar>
+
+  <!-- -->
+
+  <ion-item-divider color="light">
+    <h5>Searchbar with telephone type</h5>
+  </ion-item-divider>
+  <ion-searchbar type="tel"></ion-searchbar>
+
+  <!-- -->
+
+  <ion-item-divider color="warning">
+    <h5>Searchbar with numeric inputmode</h5>
+  </ion-item-divider>
+  <ion-searchbar inputmode="numeric"></ion-searchbar>
+
+  <!-- -->
+
+  <ion-item-divider color="medium">
+    <h5>Searchbar with numeric inputmode</h5>
+  </ion-item-divider>
+  <ion-searchbar inputmode="numeric"></ion-searchbar>
+
+  <!--  -->
+
+  <ion-item-divider color="dark">
+    <h5>Searchbar disabled</h5>
+  </ion-item-divider>
+  <ion-searchbar disabled="true"></ion-searchbar>
+
+  <!--  -->
+
+  <ion-item-divider>
+    <h5>Searchbar with a cancel button and custom cancel button text</h5>
+  </ion-item-divider>
+  <ion-searchbar showCancelButton="focus" cancelButtonText="Custom Cancel"></ion-searchbar>
+
+  <!--  -->
+
+  <ion-item-divider>
+    <h5>Searchbar with a custom debounce</h5>
+  </ion-item-divider>
+  <ion-searchbar debounce="500"></ion-searchbar>
+
+  <!-- -->
+
+  <ion-item-divider>
+    <h5>Animated Searchbar</h5>
+  </ion-item-divider>
+  <ion-searchbar animated></ion-searchbar>
+
+  <!--  -->
+
+  <ion-item-divider>
+    <h5>Searchbar with a placeholder</h5>
+  </ion-item-divider>
+  <ion-searchbar placeholder="Filter Schedules"></ion-searchbar>
+
+  <!--  -->
+
+  <ion-item-divider>
+    <h5>Searchbar in a Toolbar</h5>
+  </ion-item-divider>
+  <ion-toolbar>
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
+
+</ion-content>
