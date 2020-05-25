@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Range</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+
+    <ion-item-divider color="danger">
+      <h5>Pin</h5>
+    </ion-item-divider>
+    <ion-item>
+      <ion-range pin="true" color="danger"></ion-range>
+    </ion-item>
+
+    <!--  -->
+
+    <ion-item-divider color="secondary">
+      <h5>Max - Min</h5>
+    </ion-item-divider>
+    <ion-item>
+      <ion-range min="-200" max="200" color="secondary">
+        <ion-label slot="start">-200</ion-label>
+        <ion-label slot="end">200</ion-label>
+      </ion-range>
+    </ion-item>
+
+    <!--  -->
+
+    <ion-item-divider color="tertiary">
+      <h5>Icon</h5>
+    </ion-item-divider>
+    <ion-item>
+      <ion-range>
+        <ion-icon size="small" slot="start" name="sunny"></ion-icon>
+        <ion-icon slot="end" name="sunny"></ion-icon>
+      </ion-range>
+    </ion-item>
+
+    <!--  -->
+
+    <ion-item-divider color="success">
+      <h5>Snaps</h5>
+    </ion-item-divider>
+    <ion-item>
+      <ion-range min="1000" max="2000" step="100" snaps="true" color="secondary"></ion-range>
+    </ion-item>
+
+    <!--  -->
+
+    <ion-item-divider color="warning">
+      <h5>Ticks false</h5>
+    </ion-item-divider>
+    <ion-item>
+      <ion-range min="1000" max="2000" step="100" snaps="true" ticks="false" color="warning"></ion-range>
+    </ion-item>
+
+    <!--  -->
+
+    <ion-item-divider color="light">
+      <h5>Dual Knobs</h5>
+    </ion-item-divider>
+    <ion-item>
+      <ion-range dualKnobs="true" min="21" max="72" step="3" snaps="true"></ion-range>
+    </ion-item>
+
+    <!--  -->
+
+    <ion-item-divider color="medium">
+      <h5>IOS</h5>
+    </ion-item-divider>
+    <ion-item>
+      <ion-range mode="ios"></ion-range>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>
