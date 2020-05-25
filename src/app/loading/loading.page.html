@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Loading</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-fab vertical="top" horizontal="start" slot="fixed">
+    <ion-fab-button (click)="presentLoading()">
+      <ion-icon name="refresh-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="presentLoadingWithOptions()">
+      <ion-icon name="refresh-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-fab vertical="center" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="presentLoadingIos()">
+      <ion-icon name="logo-apple"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-fab vertical="center" horizontal="start" slot="fixed">
+    <ion-fab-button (click)="presentLoadingDismiss()">
+      <ion-icon name="stopwatch-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

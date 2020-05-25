@@ -106,6 +106,18 @@ const routes: Routes = [
   {
     path: 'popover',
     loadChildren: () => import('./popover/popover.module').then( m => m.PopoverPageModule)
+  },
+  {
+    path: 'loading',
+    loadChildren: () => import('./loading/loading.module').then( m => m.LoadingPageModule)
+  },
+  {
+    path: 'progress',
+    loadChildren: () => import('./progress/progress.module').then( m => m.ProgressPageModule)
+  },
+  {
+    path: 'skeleton',
+    loadChildren: () => import('./skeleton/skeleton.module').then( m => m.SkeletonPageModule)
   }
 ];
 
