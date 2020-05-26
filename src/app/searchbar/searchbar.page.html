@@ -21,9 +21,22 @@
   <!--  -->
 
   <ion-item-divider color="primary">
+    <h5>Search from array</h5>
+  </ion-item-divider>
+  <ion-searchbar (ionInput)="filterArray($event)"></ion-searchbar>
+
+  <ion-list>
+    <ion-item *ngFor="let item of arrayData">
+      {{item}}
+    </ion-item>
+  </ion-list>
+
+  <!--  -->
+
+  <ion-item-divider color="primary">
     <h5>Default</h5>
   </ion-item-divider>
-  <ion-searchbar></ion-searchbar>
+  <ion-searchbar (ionInput)="checkInput($event)"></ion-searchbar>
 
   <!--  -->
 

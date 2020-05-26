@@ -142,6 +142,14 @@ const routes: Routes = [
   {
     path: 'searchbar',
     loadChildren: () => import('./searchbar/searchbar.module').then( m => m.SearchbarPageModule)
+  },
+  {
+    path: 'segment',
+    loadChildren: () => import('./segment/segment.module').then( m => m.SegmentPageModule)
+  },
+  {
+    path: 'select',
+    loadChildren: () => import('./select/select.module').then( m => m.SelectPageModule)
   }
 ];
 
