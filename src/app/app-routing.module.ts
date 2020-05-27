@@ -162,6 +162,26 @@ const routes: Routes = [
   {
     path: 'toast',
     loadChildren: () => import('./toast/toast.module').then( m => m.ToastPageModule)
+  },
+  {
+    path: 'toggle',
+    loadChildren: () => import('./toggle/toggle.module').then( m => m.TogglePageModule)
+  },
+  {
+    path: 'toolbar',
+    loadChildren: () => import('./toolbar/toolbar.module').then( m => m.ToolbarPageModule)
+  },
+  {
+    path: 'header',
+    loadChildren: () => import('./header/header.module').then( m => m.HeaderPageModule)
+  },
+  {
+    path: 'back-button',
+    loadChildren: () => import('./back-button/back-button.module').then( m => m.BackButtonPageModule)
+  },
+  {
+    path: 'text',
+    loadChildren: () => import('./text/text.module').then( m => m.TextPageModule)
   }
 ];
 
