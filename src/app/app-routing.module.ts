@@ -154,6 +154,14 @@ const routes: Routes = [
   {
     path: 'slides',
     loadChildren: () => import('./slides/slides.module').then( m => m.SlidesPageModule)
+  },
+  {
+    path: 'tab',
+    loadChildren: () => import('./tab/tab.module').then( m => m.TabPageModule)
+  },
+  {
+    path: 'toast',
+    loadChildren: () => import('./toast/toast.module').then( m => m.ToastPageModule)
   }
 ];
 
